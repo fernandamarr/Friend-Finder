@@ -1,67 +1,31 @@
 var friends = [{
-        "name": "Selena",
-        "photo": "https://img.buzzfeed.com/buzzfeed-static/static/2015-04/7/18/enhanced/webdr12/enhanced-6820-1428444266-15.png",
-        "scores": [
-            5,
-            1,
-            4,
-            4,
-            5,
-            1,
-            2,
-            5,
-            4,
-            1
-        ]
+        "name": "Arturo",
+        "photo": "https://www.nationalgeographic.com/content/dam/animals/2018/09/comedy-wildlife-awards-photos/comedy-wildlife-awards-squirel-stop.ngsversion.1537203605960.adapt.1900.1.jpg",
+        "scores": [5,1,2,4,5,1,2,4,4,1]
     },
     {
         "name": "Tania",
-        "photo": "https://i.pinimg.com/originals/ef/8d/ac/ef8dacad39a822298bb294286e02c82b.jpg",
-        "scores": [
-            2,
-            5,
-            3,
-            1,
-            5,
-            2,
-            1,
-            5,
-            4,
-            2
-        ]
+        "photo": "https://storage.hidabroot.org/Graphics/Storage/133146.jpg",
+        "scores": [4,2,3,3,2,2,5,5,1,3]
     },
     {
         "name": "Josh",
-        "photo": "https://img.freepik.com/free-vector/cute-animal-doing-dabbing_23-2147847948.jpg?size=338&ext=jpg",
-        "scores": [
-            5,
-            1,
-            2,
-            3,
-            5,
-            1,
-            5,
-            1,
-            3,
-            1
-        ]
+        "photo": "http://bargainbabe.com/wp-content/uploads/2014/06/995458_321973761272384_1654944609_n.jpg",
+        "scores": [3,3,4,2,3,3,5,1,3,2]
     },
     {
         "name": "Valeria",
-        "photo": "https://img.buzzfeed.com/buzzfeed-static/static/2015-11/13/18/campaign_images/webdr11/badass-90s-female-tv-characters-2-8398-1447457403-18_dblbig.jpg",
-        "scores": [
-            3,
-            5,
-            4,
-            1,
-            5,
-            5,
-            2,
-            2,
-            4,
-            3
-        ]
-    }
+        "photo": "http://blog.canvaspop.com/wp-content/uploads/2017/10/cute-panda-waving.jpeg",
+        "scores": [2,4,5,1,1,4,2,3,2,5]
+    },    {
+        "name": "Sam",
+        "photo": "https://i.imgur.com/CXSVhhq.jpg",
+        "scores": [1,5,1,2,1,5,3,5,2,4]
+    },{
+        "name": "Jackie",
+        "photo": "https://i.ytimg.com/vi/f9eKDI4g5-M/maxresdefault.jpg",
+        "scores": [1,2,3,4,5,5,4,3,2,1]
+    },
 ];
 
 module.exports = friends;

@@ -3,48 +3,47 @@
 // var bodyParser = require('body-parser'); //middleware module to extract the entire body portion of an incoming request stream and exposes it on req.body.
 
 // Connect JSON file to grab array of objects
-var friends = require("../data/friends.js");
+var friendsList = require("../data/friends");
 
 // Routing 
 module.exports = function (app) {
 
     // API get request to get friends data
     app.get("/api/friends", function (req, res) {
-        res.json(friends);
+        res.json(friendsList);
     });
 
     // Add friends
     app.post("/api/friends", function (req, res) {
+        // capture user input 
+        var newFriend = req.body;
+        var friendScore = newFriend.scores;
+        var score = [];
         var match = 0;
         var difference = 0;
-        var scoreArr = [];
 
-        // capture user input and convert user score into number
-        var newFriend = req.body;
-        var friendName = newFriend.name;
-        var friendScore = newFriend.scores;
-
-        for (var i = 0; i < friends.length; i++) {
+        for (var i = 0; i < friendsList.length; i++) {
             difference = 0;
+
+            // testing
+            console.log("friends: " + JSON.stringify(friendsList[i]));
+
             for (var j = 0; j < friendScore.length; j++) {
-                difference += (Math.abs(parseInt(friends[i].scores[j]) - parseInt(friendScore[j])));
+                difference += (Math.abs(parseInt(friendsList[i].scores[j]) - parseInt(friendScore[j]))); // use Math.abs() to get rid of negative numbers
             }
-            scoreArr.push(difference);
-        }
-
-        // find the best match
-        for (var i = 0; i < scoreArr.length; i++) {
-            if(scoreArr[i] <= scoreArr[match]) {
-                match = i;
+            score.push(difference);
             }
-        }
+            // compare results
+            for (var i = 0; i < score.length; i++) {
+                if(score[i] < score[match]) {
+                    match = i;
+                }
+            }
 
-        // return best match
-        var bestFriend = friends[match];
-        res.json(bestFriend);
+            var bestFriend = friendsList[match];
+            res.json(bestFriend);
 
-        // push to friends array
-        friends.push(req.body);
-
-    });
-}
+            console.log(req.body);
+            friendsList.push(req.body);
+        });
+};
