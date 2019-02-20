@@ -9,7 +9,7 @@ var friends = require("./app/data/friends.js")
 var app = express();
 
 // Sets an initial port to use in listener
-var PORT = process.env.PORT || 8080;
+var PORT = process.env.PORT;
 
 // Sets up the Express app to handle data parsing
 app.use(express.static('app')); //serve images, CSS files, and JavaScript files in the app directory, to be able to load the files that are in the public directory (http://localhost:8080/data/friends.js)
