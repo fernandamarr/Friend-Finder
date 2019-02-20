@@ -12,7 +12,7 @@ var app = express();
 var PORT = process.env.PORT || 8080;
 
 // Sets up the Express app to handle data parsing
-app.use(express.static('app')); //serve images, CSS files, and JavaScript files in the app directory, to be able to load the files that are in the public directory (http://localhost:8080/data/friends.js)
+app.use(express.static(__dirname + "/")); //serve images, CSS files, and JavaScript files in the app directory, to be able to load the files that are in the public directory (http://localhost:8080/data/friends.js)
 app.use(express.urlencoded({
   extended: true
 }));
@@ -23,7 +23,9 @@ app.use(express.json());
 require("./app/routing/apiRoutes")(app);
 require("./app/routing/htmlRoutes")(app);
 
-// Listener - "starts" server
+// Starts server to listen
 app.listen(PORT, function () {
   console.log("App listening on http://localhost:" + PORT);
 });
+
+
