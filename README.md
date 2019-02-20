@@ -22,6 +22,7 @@ npm install
 
 * HTML
 * CSS/Bootstrap
+* Google Fonts
 * JavaScript
 * jQuery
 * AJAX
