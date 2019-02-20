@@ -21,7 +21,7 @@ npm install
 ## Technologies Used
 
 * HTML
-* CSS
+* CSS/Bootstrap
 * JavaScript
 * jQuery
 * AJAX
