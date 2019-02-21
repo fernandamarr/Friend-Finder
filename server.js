@@ -1,7 +1,6 @@
 // Dependencies
 var express = require("express");
 var path = require("path");
-// var bodyParser = require("body-parser");
 
 // Seed data for database
 var friends = require("./app/data/friends.js")
