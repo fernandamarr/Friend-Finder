@@ -8,15 +8,14 @@
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
     "mysql": "^2.16.0",
-    "path": "^0.12.7",
-    "node": "^11.10.0"
+    "node": "^11.10.0",
+    "path": "^0.12.7"
   },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
     "watch": "nodemon server.js"
-
   },
   "repository": {
     "type": "git",
