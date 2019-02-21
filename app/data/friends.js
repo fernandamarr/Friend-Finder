@@ -4,7 +4,7 @@ var friends = [{
         "scores": [5,1,2,4,5,1,2,4,4,1]
     },
     {
-        "name": "Tania",
+        "name": "Veronica",
         "photo": "https://storage.hidabroot.org/Graphics/Storage/133146.jpg",
         "scores": [4,2,3,3,2,2,5,5,1,3]
     },
@@ -14,7 +14,7 @@ var friends = [{
         "scores": [3,3,4,2,3,3,5,1,3,2]
     },
     {
-        "name": "Valeria",
+        "name": "Sonia",
         "photo": "http://blog.canvaspop.com/wp-content/uploads/2017/10/cute-panda-waving.jpeg",
         "scores": [2,4,5,1,1,4,2,3,2,5]
     },    {
